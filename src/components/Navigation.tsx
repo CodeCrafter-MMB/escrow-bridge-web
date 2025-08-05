@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Shield, X } from 'lucide-react';
+import { Menu, Gift, X } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,8 +24,8 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <Shield className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold text-foreground">SecureEscrow</span>
+            <Gift className="h-8 w-8 text-primary" />
+            <span className="text-xl font-bold text-foreground">WishCelebrate</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -69,7 +69,7 @@ const Navigation = () => {
                   variant="hero"
                   onClick={() => setIsLoggedIn(true)}
                 >
-                  Get Started
+                  Create a Wish
                 </Button>
               </>
             )}
@@ -85,8 +85,8 @@ const Navigation = () => {
             <SheetContent side="right" className="w-80">
               <div className="flex items-center justify-between mb-8">
                 <div className="flex items-center space-x-2">
-                  <Shield className="h-6 w-6 text-primary" />
-                  <span className="text-lg font-bold">SecureEscrow</span>
+                  <Gift className="h-6 w-6 text-primary" />
+                  <span className="text-lg font-bold">WishCelebrate</span>
                 </div>
                 <Button 
                   variant="ghost" 
@@ -150,7 +150,7 @@ const Navigation = () => {
                           setIsOpen(false);
                         }}
                       >
-                        Get Started
+                        Create a Wish
                       </Button>
                     </>
                   )}
